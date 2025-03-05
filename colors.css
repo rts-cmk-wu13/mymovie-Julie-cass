@@ -1,0 +1,25 @@
+:root{
+    color-scheme: light dark;
+    --dark-color: hsl(0, 0%, 0%);
+    --light-color: hsl(0, 0%, 100%);
+
+    --grey-color: hsl(248, 5%, 68%);
+
+    --lightBlue-color: hsl(227, 100%, 93%);
+    --darkBlue-color: hsl(243, 67%, 17%);
+}
+
+[data-dark="true"]{
+    color-scheme: dark;
+}
+[data-dark="false"]{
+    color-scheme: light;
+}
+
+html{
+    color: light-dark(var(--dark-color),var(--light-color));
+    background-color: light-dark(var(--light-color),var(--dark-color));
+}
+h1{
+    color: light-dark(var(--darkBlue-color),var(--lightBlue-color));
+}

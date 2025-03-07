@@ -16,10 +16,19 @@
     color-scheme: light;
 }
 
-html{
+html,.wrapper{
     color: light-dark(var(--dark-color),var(--light-color));
     background-color: light-dark(var(--light-color),var(--dark-color));
 }
 h1{
     color: light-dark(var(--darkBlue-color),var(--lightBlue-color));
+}
+
+button, #check{
+    color: light-dark(var(--grey-color),var(--grey-color));
+    background-color: light-dark(var(--light-color),var(--dark-color));
+}
+
+.movieIMG i{
+    color: #FFC319;
 }

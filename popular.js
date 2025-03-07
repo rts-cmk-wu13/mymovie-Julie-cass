@@ -5,7 +5,7 @@ SectionElem.innerHTML =
 `
     <h2>Popular</h2>
 <div>
-<button>See more</button>
+<button class="seeMore__btn">See more</button>
 </div>
 `
 

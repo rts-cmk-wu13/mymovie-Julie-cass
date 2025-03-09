@@ -1,11 +1,11 @@
 
 let SectionElm = document.createElement("section")
-SectionElm.classList = "main_section"
+SectionElm.classList = "showing_container"
 
 SectionElm.innerHTML =
 `
-    <h2>Now Showing</h2>
 <div class="showing_div">
+    <h2>Now Showing</h2>
 <button class="seeMore__btn">See more</button>
 </div>
 `
@@ -46,7 +46,8 @@ fetch('https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1', op
     Section.innerHTML = data.results.map( movie => 
     ` 
 <div class="movieIMG">
-<img src="${baseUrl}${movie.poster_path}" alt="">
+
+    <a href="#"><img src="${baseUrl}${movie.poster_path}" alt=""></a>
 <h3>${movie.original_title}</h3>
 <p><i class="fa-solid fa-star"></i> ${movie.vote_average}/10 IMDb</p>
 </div>

@@ -1,5 +1,6 @@
 .showing_div{
     display: flex;
+    justify-content: space-between;
 }
 
 .seeMore__btn{

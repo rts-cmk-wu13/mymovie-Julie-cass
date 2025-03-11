@@ -48,7 +48,7 @@ fetch('https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1', op
 <div class="movieIMG">
 
     <a href="#"><img src="${baseUrl}${movie.poster_path}" alt=""></a>
-<h3>${movie.original_title}</h3>
+<h3>${movie.title}</h3>
 <p><i class="fa-solid fa-star"></i> ${movie.vote_average}/10 IMDb</p>
 </div>
 
@@ -59,3 +59,9 @@ fetch('https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1', op
     })
     
     document.querySelector("main").append(Section);
+
+
+
+
+
+    

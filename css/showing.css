@@ -1,41 +1,43 @@
-.showing_div{
+.showing_div {
     display: flex;
     justify-content: space-between;
 }
 
-.seeMore__btn{
-    border-radius: 0.5rem;
+.seeMore__btn {
+    border-radius: 1rem;
     border: 1px solid;
-background-color: none;
+    background-color: none;
+
+    font-size: 0.6em;
+    padding: 0.3rem;
 }
 
 
-
-
-
-
-.movies_showing{
-display: flex;
-overflow-x: scroll;
+.movies_showing {
+    display: flex;
+    overflow-x: scroll;
 }
-.movies_showing::-webkit-scrollbar{
-    display:none;
+
+.movies_showing::-webkit-scrollbar {
+    display: none;
 }
-div .movieIMG{
+
+div .movieIMG {
     padding-left: 1rem;
 }
 
 
-div .movieIMG:last-child{
+div .movieIMG:last-child {
     padding-right: 1rem;
 }
 
 
-.movieIMG img{
-max-width: 8.9rem;
-width: 8.9rem;
-height: 13rem;
+.movieIMG img {
+    max-width: 8.9rem;
+    width: 8.9rem;
+    height: 13rem;
 
-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+
 
 }

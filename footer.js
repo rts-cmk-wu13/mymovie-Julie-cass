@@ -6,13 +6,13 @@ sec.innerHTML =
 <nav>
     <ul>
         <li>
-            <a href=""></a>
+            <a href=""><i class="fa-solid fa-film"></i></a>
         </li>  
          <li>
-            <a href=""></a>
+            <a href=""><i class="fa-solid fa-ticket"></i></a>
          </li> 
         <li>
-            <a href=""></a>
+            <a href=""><i class="fa-regular fa-bookmark"></i></a>
         </li>
     </ul>
 </nav>

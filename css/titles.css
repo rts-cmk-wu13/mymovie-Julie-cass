@@ -2,3 +2,14 @@
     display: flex;
 }
 
+
+.popular_title, 
+.showing_container{
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+h3{
+    font-size: 1em;
+}
+

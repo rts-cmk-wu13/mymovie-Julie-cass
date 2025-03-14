@@ -7,6 +7,9 @@
 
     --lightBlue-color: hsl(227, 100%, 93%);
     --darkBlue-color: hsl(243, 67%, 17%);
+
+    --lightShadow-color:hsla(44, 100%, 55%, 0.2);
+    --darkShaodw-color: hsla(42, 5%, 43%, 0.2);
 }
 
 [data-dark="true"]{
@@ -29,6 +32,17 @@ button, #check{
     background-color: light-dark(var(--light-color),var(--dark-color));
 }
 
-.movieIMG i{
+.movieIMG i, .popular i{
     color: #FFC319;
+}
+
+.movieIMG img{
+    box-shadow: 0 8px 15px light-dark(var(--darkShaodw-color), var(--lightShadow-color));
+    background-color: light-dark(var(--light-color),var(--dark-color));
+}
+
+
+
+.movieIMG p, .popular p{
+    color: var(--grey-color);
 }

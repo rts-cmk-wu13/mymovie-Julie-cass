@@ -1,0 +1,48 @@
+:root{
+    color-scheme: light dark;
+    --dark-color: hsl(0, 0%, 0%);
+    --light-color: hsl(0, 0%, 100%);
+
+    --grey-color: hsl(248, 5%, 68%);
+
+    --lightBlue-color: hsl(227, 100%, 93%);
+    --darkBlue-color: hsl(243, 67%, 17%);
+
+    --lightShadow-color:hsla(44, 100%, 55%, 0.2);
+    --darkShaodw-color: hsla(42, 5%, 43%, 0.2);
+}
+
+[data-dark="true"]{
+    color-scheme: dark;
+}
+[data-dark="false"]{
+    color-scheme: light;
+}
+
+html,.wrapper{
+    color: light-dark(var(--dark-color),var(--light-color));
+    background-color: light-dark(var(--light-color),var(--dark-color));
+}
+h1{
+    color: light-dark(var(--darkBlue-color),var(--lightBlue-color));
+}
+
+button, #check{
+    color: light-dark(var(--grey-color),var(--grey-color));
+    background-color: light-dark(var(--light-color),var(--dark-color));
+}
+
+.movieIMG i, .popular i{
+    color: #FFC319;
+}
+
+.movieIMG img{
+    box-shadow: 0 8px 15px light-dark(var(--darkShaodw-color), var(--lightShadow-color));
+    background-color: light-dark(var(--light-color),var(--dark-color));
+}
+
+
+
+.movieIMG p, .popular p{
+    color: var(--grey-color);
+}

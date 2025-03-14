@@ -16,6 +16,11 @@ document.querySelector("main").append(SecElm)
 let Elm = document.createElement("section")
 Elm.classList = "popular_movies"
 
+/* let genreTags = "";
+
+for(i in genres){
+    genreTags+= `<a href="${'https://api.themoviedb.org/3/genre/movie/list'}">${genres[i].name}</a>`; // Add genre link in the href
+} */
 
 fetch('https://api.themoviedb.org/3/movie/popular?language=en-US&page=1', options)
 .then(res => res.json())
@@ -33,7 +38,7 @@ fetch('https://api.themoviedb.org/3/movie/popular?language=en-US&page=1', option
     <div class="popTXT">
 <h3>${popular.title}</h3>
 <p><i class="fa-solid fa-star"></i> ${popular.vote_average}/10 IMDb</p>
-<p>here for when/if i get genres</p>
+<p>${popular.genre_ids}</p>
 
 </div>
 </article>

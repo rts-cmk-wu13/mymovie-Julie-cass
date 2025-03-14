@@ -1,5 +1,5 @@
 let sec = document.createElement("section")
-sec.classList = "footer"
+sec.classList = "footerElm"
 
 sec.innerHTML =
     `

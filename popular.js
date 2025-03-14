@@ -26,14 +26,14 @@ fetch('https://api.themoviedb.org/3/movie/popular?language=en-US&page=1', option
     Elm.innerHTML = Data.results.map( popular => 
     ` 
 <article class="popular">
-<div>
+<div class="popIMG">
     <a href="#"><img class="popularIMG" src="${baseUrl}${popular.poster_path}" alt=""></a>
     </div>
     
-    <div>
+    <div class="popTXT">
 <h3>${popular.title}</h3>
 <p><i class="fa-solid fa-star"></i> ${popular.vote_average}/10 IMDb</p>
-<p>${popular.vote_average}/10 IMDb</p>
+<p>here for when/if i get genres</p>
 
 </div>
 </article>

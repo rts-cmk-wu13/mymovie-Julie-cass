@@ -1,9 +1,11 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/UgKBWXTI)
 **Dynamisk web**
-
 # Web applikation - MyMovie
 
 Du skal i praktisk web perioden lave applikationene my movie. Data skal hentes fra "The Movie Database".
+
+link til site:
+https://venerable-hummingbird-f79418.netlify.app/#
 
 ### **Mål**
 Målet med opgaven er at vise hvad du har lært i skoleperioden om listevisning og detaljevisning ved brug af url-parametre(query-strings). Det forventes, at den afleverede opgave fremstår som et "færdigt produkt".
